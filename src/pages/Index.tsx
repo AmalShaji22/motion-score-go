@@ -1,16 +1,43 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/landing/Navbar";
+import HeroSection from "@/components/landing/HeroSection";
+import ProblemSection from "@/components/landing/ProblemSection";
+import SolutionSection from "@/components/landing/SolutionSection";
+import HowItWorksSection from "@/components/landing/HowItWorksSection";
+import FeaturesGrid from "@/components/landing/FeaturesGrid";
+import CompanionDeviceSection from "@/components/landing/CompanionDeviceSection";
+import InteractiveDemoSection from "@/components/landing/InteractiveDemoSection";
+import LeaderboardSection from "@/components/landing/LeaderboardSection";
+import StreakSection from "@/components/landing/StreakSection";
+import TestimonialsSection from "@/components/landing/TestimonialsSection";
+import PricingSection from "@/components/landing/PricingSection";
+import FinalCTASection from "@/components/landing/FinalCTASection";
+import Footer from "@/components/landing/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <Navbar />
+      <HeroSection />
+      <ProblemSection />
+      <SolutionSection />
+      <HowItWorksSection />
+      <div id="features">
+        <FeaturesGrid />
+      </div>
+      <div id="device">
+        <CompanionDeviceSection />
+      </div>
+      <InteractiveDemoSection />
+      <LeaderboardSection />
+      <StreakSection />
+      <TestimonialsSection />
+      <div id="pricing">
+        <PricingSection />
+      </div>
+      <FinalCTASection />
+      <Footer />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
