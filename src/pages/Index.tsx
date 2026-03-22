@@ -4,6 +4,7 @@ import ProblemSection from "@/components/landing/ProblemSection";
 import SolutionSection from "@/components/landing/SolutionSection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import FeaturesGrid from "@/components/landing/FeaturesGrid";
+import AvatarSection from "@/components/landing/AvatarSection";
 import CompanionDeviceSection from "@/components/landing/CompanionDeviceSection";
 import InteractiveDemoSection from "@/components/landing/InteractiveDemoSection";
 import LeaderboardSection from "@/components/landing/LeaderboardSection";
@@ -24,6 +25,7 @@ const Index = () => {
       <div id="features">
         <FeaturesGrid />
       </div>
+      <AvatarSection />
       <div id="device">
         <CompanionDeviceSection />
       </div>
